@@ -5,7 +5,7 @@ PImage img;
 
 void setup() {
   size(900, 900, P2D);
-  frameRate(70);
+  //frameRate(70);
   s = new System();
   img = loadImage("texture32.png");
   img.resize(140, 170);
@@ -18,16 +18,15 @@ void setup() {
 //}
 
 void draw() {
-  //background(27);
+  background(27);
   clear();
-  background(0);
   blendMode(ADD);
   //img.resize(mouseY/6, mouseY/6+40);
 
   //println(frameRate);
 
   if (mousePressed) {
-    for (int i=0; i<4; i++) {
+    for (int i=0; i<3; i++) {
       s.add_new_Fire(Fires,
         //new PVector(450, 800), //pos
         new PVector(mouseX, mouseY), //pos

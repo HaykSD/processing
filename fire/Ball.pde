@@ -31,7 +31,7 @@ class Fire {
     noStroke();
     //stroke(255);
     imageMode(CENTER);
-    tint(random(210,255),random(40,77),random(50), lifetime);
+    tint(random(200,255),random(30,77),random(50), lifetime);
     image(img, pos.x, pos.y);
 
     //fill(col, lifetime*2);
